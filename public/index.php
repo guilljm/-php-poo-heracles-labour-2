@@ -1,12 +1,18 @@
 <?php
 
-require '../src/Fighter.php';
+require_once '../src/Fighter.php';
+require_once '../src/Weapon.php';
 
 /** ✅ DEBUT DE LA ZONE À MODIFIER ✅ **/
 
 
-$heracles = new Fighter('Heracles', 20, 6);
-$boar = new Fighter('Erymanthian Boar', 25, 12);
+$heracles = new Fighter('Heracles', 20, 6, 'heracles.svg');
+$boar = new Fighter('Erymanthian Boar', 25, 12, 'boar.svg');
+
+$weapon = new Weapon();
+$heracles->setWeapon($weapon);
+
+
 
 /** FIN DE LA ZONE A MODIFIER **/
 /** ⛔ Ne pas modifier en dessous ⛔ **/
